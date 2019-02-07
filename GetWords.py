@@ -1,19 +1,13 @@
 from __future__ import unicode_literals
-import youtube_dl
 import speech_recognition as sr
 from os import path
 from pydub import AudioSegment
 from pytube import YouTube
-import os, sys
+import os, sys, time, ffmpeg, urllib.error, re, pipes, random, youtube_dl
 import lxml, urllib, urllib.request
 from lxml import etree
 from urllib import request
-import time
-import ffmpeg
-import urllib.error
-import re
-import pipes
-import random
+
 
 
 def video_to_audio(fileName):
